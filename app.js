@@ -1,49 +1,21 @@
-alert("it's working!");
-const examScores = [98, 77, 84, 91, 57, 66];
+let nums = [1, 2, 3];
+let mystery = [1, 2, 3];
+let moreNums = nums;
 
-for (let i = 0; i < examScores.length; i++) {
-  console.log(i, examScores[i]);
+nums === mystery;
+
+nums === moreNums;
+
+const user = {
+  username: "CherryGarcia8",
+  email: "garcia@gmail.com",
+  notifications: ["message", "alert"],
+};
+
+if (user.notifications === []) {
+  console.log("NO NEW NOTIFICATIONS!");
 }
 
-const myStudents = [
-  {
-    firstName: "Zeus",
-    grade: 86,
-  },
-  {
-    firstName: "Artemis",
-    grade: 97,
-  },
-  {
-    firstName: "Hera",
-    grade: 72,
-  },
-  {
-    firstName: "Apollo",
-    grade: 90,
-  },
-];
-
-for (let i = 0; i < myStudents.length; i++) {
-  let student = myStudents[i];
-  console.log(`${student.firstName} scored ${student.grade}`);
+if (!user.notifications.length) {
+  console.log("NO NEW NOTIFICATIONS!");
 }
-
-let total = 0;
-
-for (let i = 0; i < myStudents.length; i++) {
-  let student = myStudents[i];
-  total += student.grade; 
-console.log(total / myStudents.length); 
-
-
-const word = "stressed";
-
-let reversedWord = ""; 
-
-
-for (let i = word.length - 1; i >= 0; i--) {
-  reversedWord += word[i]; /
-}
-
-console.log(reversedWord);
