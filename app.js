@@ -15,11 +15,10 @@
 // } else {
 //   console.log("invalid pass");
 // }
-||
+// ||
 let age = 9;
 if (age < 6 || age >= 65) {
   console.log("you get in for free");
 } else {
   console.log("10$ please");
 }
-
