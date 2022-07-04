@@ -1,9 +1,5 @@
-if statement
-let rating = 4;
- if (rating === 3) {
-   console.log("you are a superstar!");
- } else if (rating === 2) {
-   console.log("byeee");
-} else {
-  console.log("wrong");
-}
+const nums = [3, 4, 5, 6, 7];
+// To multiply all values in nums:
+const product = nums.reduce((total, currentVal) => {
+  return total * currentVal;
+});
