@@ -8,4 +8,4 @@ while (true) {
   guess = Math.floor(Math.random() * 10);
 }
 console.log(`Target: ${target} Guess: ${guess}`);
-console.log(`CONGRATS YOU WIN!!`);
+console.log(`not in the mood!!`);
