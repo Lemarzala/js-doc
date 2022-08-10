@@ -33,8 +33,7 @@ const books = [
     rating: 4.36,
   },
 ];
-//Find first book w/ rating over 4.3
+
 const goodBook = books.find((b) => b.rating >= 4.3);
 
-//Find first book with Neil Gaiman as an author:
 const neilBook = books.find((b) => b.authors.includes("Neil Gaiman"));
