@@ -10,7 +10,8 @@ if (message) {
 }
 
 document.querySelector("form").addEventListener("submit", (event) => {
-  event.preventDefault();
+  // event.preventDefault();
+  console.log(event);
 
   document.querySelector("#message-form").classList.add("hide");
   document.querySelector("#link-form").classList.remove("hide");
