@@ -6,7 +6,7 @@ function isValidPassword(password, username) {
     return false;
   }
   if (password.indexOf(username) !== -1) {
-    return false;
+    return true;
   }
   return true;
 }
