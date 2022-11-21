@@ -1,12 +1,14 @@
-function isValidPassword(password, username) {
-  if (password.length < 8) {
-    return false;
-  }
-  if (password.indexOf(" ") !== -1) {
-    return false;
-  }
-  if (password.indexOf(username) !== -1) {
-    return true;
-  }
-  return true;
-}
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.14.2/matter.min.js"></script>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="index.js"></script>
+  </body>
+</html>
