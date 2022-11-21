@@ -1,51 +1,47 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.0/axios.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <style>
+      .row {
+        margin-top: 25vh;
+      }
+
+      h1 {
+        margin-top: 0;
+      }
+    </style>
   </head>
 
   <body>
-    <section class="hero is-primary is-bold">
-      <div class="hero-body">
-        <div class="container">
-          <h1 class="title">
-            Movie Fight
-            <span class="icon">
-              <i class="fas fa-film"></i>
-            </span>
-          </h1>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <div class="columns">
-        <div class="column">
-          <div id="left-autocomplete"></div>
-          <div id="left-summary"></div>
+    <div class="row">
+      <div class="col s8 offset-s2">
+        <div id="message-show" class="card-panel hide">
+          <h1></h1>
+          <div>
+            <a href="./index.html">Create your own secret message</a>
+          </div>
         </div>
 
-        <div class="column">
-          <div id="right-autocomplete"></div>
-          <div id="right-summary"></div>
+        <div id="message-form" class="card-panel">
+          <form>
+            <label>Enter a Secret Message</label>
+            <input id="message-input" />
+            <button class="btn">Create</button>
+          </form>
         </div>
-      </div>
 
-      <div class="column is-half notification is-primary tutorial">
-        <h1 class="title">Search For a Movie on Both Sides</h1>
-        <p class="subtitle">We will tell you which is best!</p>
+        <div id="link-form" class="card-panel hide">
+          <div>
+            Share this link with a friend
+            <input id="link-input" />
+          </div>
+        </div>
       </div>
     </div>
-    <script src="utils.js"></script>
-    <script src="autocomplete.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
