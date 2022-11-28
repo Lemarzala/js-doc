@@ -20,5 +20,3 @@ class Color {
     return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
   }
 }
-const red = new Color(255, 67, 89, "tomato");
-const white = new Color(255, 255, 255, "white");
